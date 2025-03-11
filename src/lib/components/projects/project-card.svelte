@@ -28,9 +28,8 @@
 
 	const { project }: { project: Project } = $props();
 
-	let from = $derived(getMonthAndYear(project.period.from));
-	let to = $derived(getMonthAndYear(project.period.to));
-	let exactDuration = $derived(computeExactDuration(project.period.from, project.period.to));
+	let [from, to] = $derived(project.period.split(' - '));
+	let exactDuration = $derived(to === 'Present' ? `Since ${from}` : `${from} - ${to}`);
 </script>
 
 <FancyCard

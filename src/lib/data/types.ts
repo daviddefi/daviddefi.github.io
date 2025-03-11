@@ -68,6 +68,8 @@ export interface Project<S extends string = string> extends Item<S> {
 	name: string;
 	description: string;
 	period: string;
-	stack: Array<Skill>;
+	color: string;
+	type: string;
+	skills: Array<Skill>;
 	links?: Array<Link>;
 }

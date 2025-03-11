@@ -29,9 +29,7 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.Unknown,
 		name: 'Ohrey',
-		period: {
-			from: new Date('2023-03-01')
-		},
+		period: '2023-03 - Present',
 		skills: getSkills('flutter', 'dart', 'firebase', 'node'),
 		type: 'Mobile App'
 	},
@@ -43,9 +41,7 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.Unknown,
 		name: 'KB-HERO',
-		period: {
-			from: new Date('2023-06-01')
-		},
+		period: '2023-06 - Present',
 		skills: getSkills('react-native', 'typescript', 'node', 'postgresql'),
 		type: 'Mobile App'
 	},
@@ -57,9 +53,7 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.Unknown,
 		name: 'Banking App',
-		period: {
-			from: new Date('2023-08-01')
-		},
+		period: '2023-08 - Present',
 		skills: getSkills('flutter', 'dart', 'spring', 'postgresql'),
 		type: 'Enterprise Application'
 	},
@@ -71,9 +65,7 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.Unknown,
 		name: 'Field Verification System',
-		period: {
-			from: new Date('2023-09-01')
-		},
+		period: '2023-09 - Present',
 		skills: getSkills('flutter', 'spring-boot', 'kafka', 'redis'),
 		type: 'Enterprise Solution'
 	},
@@ -85,9 +77,7 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.Unknown,
 		name: 'Digital Lending System',
-		period: {
-			from: new Date('2023-10-01')
-		},
+		period: '2023-10 - Present',
 		skills: getSkills('spring-boot', 'angular', 'kafka', 'kubernetes'),
 		type: 'Enterprise Platform'
 	},
@@ -99,9 +89,7 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.Unknown,
 		name: 'AI Banking Assistant',
-		period: {
-			from: new Date('2023-11-01')
-		},
+		period: '2023-11 - Present',
 		skills: getSkills('python', 'tensorflow', 'opencv', 'flask'),
 		type: 'AI Application'
 	},
@@ -113,9 +101,7 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.Unknown,
 		name: 'Facial Detection Attendance System',
-		period: {
-			from: new Date('2023-12-01')
-		},
+		period: '2023-12 - Present',
 		skills: getSkills('python', 'opencv', 'tensorflow', 'docker'),
 		type: 'AI Solution'
 	}
