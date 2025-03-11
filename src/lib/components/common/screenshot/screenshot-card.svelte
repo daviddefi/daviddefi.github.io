@@ -14,16 +14,23 @@
 	import type { Screenshot } from '$lib/data/types';
 
 	const { item }: { item: Screenshot } = $props();
+
+	function handleImageError(e: Event) {
+		const img = e.target as HTMLImageElement;
+		console.error('Image failed to load:', img.src);
+		img.style.display = 'none';
+	}
 </script>
 
 <Dialog>
 	<DialogTrigger>
 		<Card class="flex aspect-square flex-col justify-end overflow-hidden">
-			<div class="relative flex-1">
+			<div class="relative flex-1 bg-muted">
 				<img
 					src={item.src}
 					alt={item.label}
 					class="absolute inset-0 h-full w-full object-cover"
+					on:error={handleImageError}
 				/>
 			</div>
 			<Separator />
@@ -36,11 +43,12 @@
 		<div class="p-4 bg-background">
 			<DialogTitle>{item.label}</DialogTitle>
 		</div>
-		<div class="relative w-full" style="height: calc(100vh - 200px);">
+		<div class="relative w-full bg-muted" style="height: calc(100vh - 200px);">
 			<img
 				src={item.src}
 				alt={item.label}
 				class="w-full h-full object-contain"
+				on:error={handleImageError}
 			/>
 		</div>
 		<div class="p-4 bg-background">
@@ -52,3 +60,10 @@
 		</div>
 	</DialogContent>
 </Dialog>
+
+<style>
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+</style>
