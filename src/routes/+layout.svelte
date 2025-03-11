@@ -1,5 +1,6 @@
 <script lang="ts">
 	import NavBar from '$lib/components/common/nav-bar/nav-bar.svelte';
+	import BaseData from '$lib/data/base';
 	import 'virtual:uno.css';
 	import '../app.css';
 	import '../markdown.css';
@@ -8,7 +9,7 @@
 	let { children } = $props();
 </script>
 
-<ModeWatcher />
+<ModeWatcher defaultMode={BaseData.defaultTheme} />
 <div class="flex h-screen w-screen flex-col overflow-x-hidden">
 	<NavBar />
 	<div class="mt-[50px] flex flex-1 flex-col">{@render children()}</div>
