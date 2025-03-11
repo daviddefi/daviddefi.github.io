@@ -70,17 +70,17 @@ const Assets = {
 	Unocss: asset('unocss.svg'),
 	Ruvy: asset('ruvy.svg'),
 	Postcss: asset('postcss.svg'),
-	Swift: asset('swift.svg'),
-	Ionic: asset('ionic.svg'),
-	ReactNative: asset('react-native.svg'),
-	Oracle: asset('oracle.svg'),
-	MySQL: asset('mysql.svg'),
-	ActiveMQ: asset('activemq.svg'),
-	Prometheus: asset('prometheus.svg'),
-	Grafana: asset('grafana.svg'),
-	Git: asset('git.svg'),
-	Jenkins: asset('jenkins.svg'),
-	Maven: asset('maven.svg')
+	Swift: asset('swift.png'),
+	Ionic: asset('ionic.png'),
+	ReactNative: asset('react.svg'),
+	Oracle: asset('oracle.png'),
+	MySQL: asset('mysql.png'),
+	ActiveMQ: asset('activemq.png'),
+	Prometheus: asset('prometheus.png'),
+	Grafana: asset('grafana.png'),
+	Git: asset('git.png'),
+	Jenkins: asset('jenkins.png'),
+	Maven: asset('maven.png')
 } as const;
 
 export default Assets;
