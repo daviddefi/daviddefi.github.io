@@ -93,6 +93,12 @@ const Assets = {
 	KBHeroScreenshots: {
 		mainScreen: asset('projects/KB-HERO-1.jpg')
 	},
+	GrillzBuilder: asset('projects/grillz-builder-logo.jpg'),
+	GrillzBuilderScreenshots: {
+		customization: asset('projects/grillz-builder-1.png'),
+		preview: asset('projects/grillz-builder-2.png'),
+		checkout: asset('projects/grillz-builder-3.png')
+	},
 	Ohrey: asset('projects/ohrey-logo.jpg'),
 	OhreyScreenshots: {
 		mainScreen: asset('projects/ohrey-1.jpg'),

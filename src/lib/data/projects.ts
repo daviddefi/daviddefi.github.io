@@ -27,7 +27,12 @@ const items: Array<Project> = [
 		description: 'A customization platform similar to Nike By You, but for custom grillz design. This interactive web application allows users to personalize their grillz with features like teeth shape selection, material choices (gold, silver, platinum), diamond placements, and custom engravings. The platform provides real-time 3D visualization of designs, dynamic pricing based on customizations, and seamless integration with Shopify for order processing. Users can experiment with different combinations, save their designs, and share them on social media.',
 		shortDescription: 'Interactive 3D grillz customization platform inspired by Nike By You.',
 		links: [{ to: '#', label: 'Private Repository' }],
-		logo: Assets.Unknown,
+		logo: Assets.GrillzBuilder,
+		screenshots: [
+			{ src: Assets.GrillzBuilderScreenshots.customization.light, label: 'Main Screen' },
+			{ src: Assets.GrillzBuilderScreenshots.preview.light, label: '3D Preview' },
+			{ src: Assets.GrillzBuilderScreenshots.checkout.light, label: '3D Preview' }
+		],
 		name: 'Grillz Builder',
 		period: '2024-02 - Present',
 		skills: getSkills('react', 'node', 'firebase', 'express'),
