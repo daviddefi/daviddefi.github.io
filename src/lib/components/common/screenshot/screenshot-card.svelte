@@ -32,19 +32,23 @@
 			</CardFooter>
 		</Card>
 	</DialogTrigger>
-	<DialogContent class="flex min-h-[70%] min-w-[70%] flex-col">
-		<DialogTitle>{item.label}</DialogTitle>
-		<div class="flex-1 overflow-hidden">
+	<DialogContent class="max-w-4xl p-0">
+		<div class="p-4 bg-background">
+			<DialogTitle>{item.label}</DialogTitle>
+		</div>
+		<div class="relative w-full" style="height: calc(100vh - 200px);">
 			<img
 				src={item.src}
 				alt={item.label}
-				class="h-full w-full object-contain"
+				class="w-full h-full object-contain"
 			/>
 		</div>
-		<DialogFooter>
-			<DialogClose>
-				<Button>Close</Button>
-			</DialogClose>
-		</DialogFooter>
+		<div class="p-4 bg-background">
+			<DialogFooter>
+				<DialogClose>
+					<Button>Close</Button>
+				</DialogClose>
+			</DialogFooter>
+		</div>
 	</DialogContent>
 </Dialog>
