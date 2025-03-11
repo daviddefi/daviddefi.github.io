@@ -14,11 +14,17 @@
 	import type { Screenshot } from '$lib/data/types';
 
 	const { item }: { item: Screenshot } = $props();
+	let imageLoaded = false;
+	let imageError = false;
+
+	function handleImageLoad() {
+		imageLoaded = true;
+	}
 
 	function handleImageError(e: Event) {
 		const img = e.target as HTMLImageElement;
 		console.error('Image failed to load:', img.src);
-		img.style.display = 'none';
+		imageError = true;
 	}
 </script>
 
@@ -26,10 +32,22 @@
 	<DialogTrigger>
 		<Card class="flex aspect-square flex-col justify-end overflow-hidden">
 			<div class="relative flex-1 bg-muted">
+				{#if !imageLoaded && !imageError}
+					<div class="absolute inset-0 flex items-center justify-center">
+						<div class="text-muted-foreground">Loading...</div>
+					</div>
+				{/if}
+				{#if imageError}
+					<div class="absolute inset-0 flex items-center justify-center">
+						<div class="text-destructive">Failed to load image</div>
+					</div>
+				{/if}
 				<img
 					src={item.src}
 					alt={item.label}
 					class="absolute inset-0 h-full w-full object-cover"
+					class:opacity-0={!imageLoaded || imageError}
+					on:load={handleImageLoad}
 					on:error={handleImageError}
 				/>
 			</div>
@@ -44,10 +62,22 @@
 			<DialogTitle>{item.label}</DialogTitle>
 		</div>
 		<div class="relative w-full bg-muted" style="height: calc(100vh - 200px);">
+			{#if !imageLoaded && !imageError}
+				<div class="absolute inset-0 flex items-center justify-center">
+					<div class="text-muted-foreground">Loading...</div>
+				</div>
+			{/if}
+			{#if imageError}
+				<div class="absolute inset-0 flex items-center justify-center">
+					<div class="text-destructive">Failed to load image</div>
+				</div>
+			{/if}
 			<img
 				src={item.src}
 				alt={item.label}
 				class="w-full h-full object-contain"
+				class:opacity-0={!imageLoaded || imageError}
+				on:load={handleImageLoad}
 				on:error={handleImageError}
 			/>
 		</div>
@@ -65,5 +95,9 @@
 	img {
 		max-width: 100%;
 		height: auto;
+		transition: opacity 0.2s;
+	}
+	.opacity-0 {
+		opacity: 0;
 	}
 </style>
