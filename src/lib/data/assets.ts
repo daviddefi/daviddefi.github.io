@@ -1,9 +1,14 @@
 import { base } from '$app/paths';
 
 const url = (file: string) => `${base}/logos/${file}`;
+const projectUrl = (file: string) => `${base}/projects/${file}`;
 
 const asset = (lightFilename: string, darkFilename = lightFilename) => {
 	return { light: url(lightFilename), dark: url(darkFilename) };
+};
+
+const projectAsset = (filename: string) => {
+	return { light: projectUrl(filename), dark: projectUrl(filename) };
 };
 
 const Assets = {
@@ -80,7 +85,8 @@ const Assets = {
 	Grafana: asset('grafana.svg'),
 	Git: asset('git.png'),
 	Jenkins: asset('jenkins.svg'),
-	Maven: asset('maven.png')
+	Maven: asset('maven.png'),
+	FowiDating: projectAsset('fowi-dating-logo.png')
 } as const;
 
 export default Assets;

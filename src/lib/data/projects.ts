@@ -1,6 +1,6 @@
 import Assets from './assets';
 import { getSkills } from './skills';
-import type { Project } from './types';
+import type { Project, Screenshot } from './types';
 
 const items: Array<Project> = [
 	{
@@ -9,11 +9,15 @@ const items: Array<Project> = [
 		description: 'A dating and friendship app with features like location services, swiping, matching, chat functionality, and blog writing capability. Similar to Tinder.',
 		shortDescription: 'Modern dating and friendship app with location-based matching and chat features.',
 		links: [{ to: '#', label: 'Private Repository' }],
-		logo: Assets.Unknown,
+		logo: Assets.FowiDating,
+		screenshots: [
+			{ src: 'fowi-dating-1.jpg', label: 'FOWI DATING Main Screen' },
+			{ src: 'fowi-dating-2.jpg', label: 'Profile View' },
+			{ src: 'fowi-dating-3.webp', label: 'Chat Interface' },
+			{ src: 'fowi-dating-4.webp', label: 'Match Screen' }
+		],
 		name: 'FOWI DATING',
-		period: {
-			from: new Date('2023-01-01')
-		},
+		period: '2023-01 - Present',
 		skills: getSkills('react-native', 'typescript', 'node', 'mongodb'),
 		type: 'Mobile App'
 	},
