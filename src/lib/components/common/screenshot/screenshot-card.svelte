@@ -14,80 +14,35 @@
 	import type { Screenshot } from '$lib/data/types';
 
 	const { item }: { item: Screenshot } = $props();
-	let imageLoaded = false;
-	let imageError = false;
-
-	function handleImageLoad() {
-		imageLoaded = true;
-	}
-
-	function handleImageError(e: Event) {
-		const img = e.target as HTMLImageElement;
-		console.error('Image failed to load:', img.src);
-		imageError = true;
-	}
 </script>
 
 <Dialog>
 	<DialogTrigger>
-		<Card class="flex aspect-square flex-col justify-end overflow-hidden">
-			<div class="relative flex-1 bg-muted">
-				{#if !imageLoaded && !imageError}
-					<div class="absolute inset-0 flex items-center justify-center">
-						<div class="text-muted-foreground">Loading...</div>
-					</div>
-				{/if}
-				{#if imageError}
-					<div class="absolute inset-0 flex items-center justify-center">
-						<div class="text-destructive">Failed to load image</div>
-					</div>
-				{/if}
-				<img
-					src={item.src}
-					alt={item.label}
-					class="absolute inset-0 h-full w-full object-cover"
-					class:opacity-0={!imageLoaded || imageError}
-					on:load={handleImageLoad}
-					on:error={handleImageError}
-				/>
-			</div>
-			<Separator />
-			<CardFooter class="rounded-b-md bg-[#00000099] pt-4 text-white backdrop-blur-sm">
-				{item.label}
-			</CardFooter>
-		</Card>
-	</DialogTrigger>
-	<DialogContent class="max-w-4xl p-0">
-		<div class="p-4 bg-background">
-			<DialogTitle>{item.label}</DialogTitle>
-		</div>
-		<div class="relative w-full bg-muted" style="height: calc(100vh - 200px);">
-			{#if !imageLoaded && !imageError}
-				<div class="absolute inset-0 flex items-center justify-center">
-					<div class="text-muted-foreground">Loading...</div>
-				</div>
-			{/if}
-			{#if imageError}
-				<div class="absolute inset-0 flex items-center justify-center">
-					<div class="text-destructive">Failed to load image</div>
-				</div>
-			{/if}
+		<Card class="group relative aspect-square overflow-hidden">
 			<img
 				src={item.src}
 				alt={item.label}
-				class="w-full h-full object-contain"
-				class:opacity-0={!imageLoaded || imageError}
-				on:load={handleImageLoad}
-				on:error={handleImageError}
+				class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+			/>
+			<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-4">
+				<p class="text-sm text-white">{item.label}</p>
+			</div>
+		</Card>
+	</DialogTrigger>
+	<DialogContent class="max-w-4xl">
+		<DialogTitle>{item.label}</DialogTitle>
+		<div class="relative aspect-video w-full overflow-hidden rounded-lg">
+			<img
+				src={item.src}
+				alt={item.label}
+				class="h-full w-full object-contain"
 			/>
 		</div>
-		<div class="p-4 bg-background">
-			<DialogFooter>
-				<DialogClose>
-					<Button>Close</Button>
-				</DialogClose>
-			</DialogFooter>
-		</div>
+		<DialogFooter>
+			<DialogClose>
+				<Button>Close</Button>
+			</DialogClose>
+		</DialogFooter>
 	</DialogContent>
 </Dialog>
 
@@ -95,9 +50,5 @@
 	img {
 		max-width: 100%;
 		height: auto;
-		transition: opacity 0.2s;
-	}
-	.opacity-0 {
-		opacity: 0;
 	}
 </style>

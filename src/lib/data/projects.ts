@@ -11,10 +11,10 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.FowiDating,
 		screenshots: [
-			{ src: 'https://daviddefi.github.io/images/projects/fowi-dating/fowi-dating-1.jpg', label: 'Main Screen' },
-			{ src: 'https://daviddefi.github.io/images/projects/fowi-dating/fowi-dating-2.jpg', label: 'Profile View' },
-			{ src: 'https://daviddefi.github.io/images/projects/fowi-dating/fowi-dating-3.jpg', label: 'Chat Interface' },
-			{ src: 'https://daviddefi.github.io/images/projects/fowi-dating/fowi-dating-4.jpg', label: 'Match Screen' }
+			{ src: '/images/projects/fowi-dating/fowi-dating-1.jpg', label: 'Main Screen' },
+			{ src: '/images/projects/fowi-dating/fowi-dating-2.jpg', label: 'Profile View' },
+			{ src: '/images/projects/fowi-dating/fowi-dating-3.jpg', label: 'Chat Interface' },
+			{ src: '/images/projects/fowi-dating/fowi-dating-4.jpg', label: 'Match Screen' }
 		],
 		name: 'FOWI DATING',
 		period: '2023-01 - Present',
