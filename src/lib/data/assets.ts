@@ -1,14 +1,9 @@
 import { base } from '$app/paths';
 
 const url = (file: string) => `${base}/logos/${file}`;
-const projectUrl = (file: string) => `${base}/images/projects/${file}`;
 
 const asset = (lightFilename: string, darkFilename = lightFilename) => {
 	return { light: url(lightFilename), dark: url(darkFilename) };
-};
-
-const projectAsset = (filename: string) => {
-	return { light: projectUrl(filename), dark: projectUrl(filename) };
 };
 
 const Assets = {
@@ -86,12 +81,13 @@ const Assets = {
 	Git: asset('git.png'),
 	Jenkins: asset('jenkins.svg'),
 	Maven: asset('maven.png'),
-	FowiDating: projectAsset('fowi-dating/fowi-dating-logo.png'),
+	// Project assets
+	FowiDating: asset('projects/fowi-dating-logo.png'),
 	FowiDatingScreenshots: {
-		mainScreen: projectAsset('fowi-dating/fowi-dating-1.jpg'),
-		profileView: projectAsset('fowi-dating/fowi-dating-2.jpg'),
-		chatInterface: projectAsset('fowi-dating/fowi-dating-3.jpg'),
-		matchScreen: projectAsset('fowi-dating/fowi-dating-4.jpg')
+		mainScreen: asset('projects/fowi-dating-1.jpg'),
+		profileView: asset('projects/fowi-dating-2.jpg'),
+		chatInterface: asset('projects/fowi-dating-3.jpg'),
+		matchScreen: asset('projects/fowi-dating-4.jpg')
 	}
 } as const;
 
