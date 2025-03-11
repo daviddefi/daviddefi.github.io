@@ -77,7 +77,7 @@ const items = [
 	defineSkill({
 		slug: 'flutter',
 		color: 'blue',
-		description: 'Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, desktop, and embedded devices from a single codebase.',
+		description: 'Flutter is Google\'s UI toolkit for building beautiful, natively compiled applications for mobile, web, desktop, and embedded devices from a single codebase.',
 		logo: Assets.Flutter,
 		name: 'Flutter (Dart)',
 		category: 'mobile'
@@ -109,7 +109,7 @@ const items = [
 	defineSkill({
 		slug: 'react-native',
 		color: 'blue',
-		description: 'React Native lets you create truly native apps and doesn't compromise your users' experiences.',
+		description: 'React Native lets you create truly native apps and doesn\'t compromise your users\' experiences.',
 		logo: Assets.ReactNative,
 		name: 'React Native',
 		category: 'mobile'
