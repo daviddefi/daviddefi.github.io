@@ -105,12 +105,6 @@ const items: Array<Project> = [
 			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.ohrey', label: '📱 Android' }
 		],
 		logo: Assets.Ohrey,
-		screenshots: [
-			{ src: Assets.OhreyScreenshots.mainScreen.light, label: 'Main Screen' },
-			{ src: Assets.OhreyScreenshots.profileView.light, label: 'Profile View' },
-			{ src: Assets.OhreyScreenshots.chatInterface.light, label: 'Chat Interface' },
-			{ src: Assets.OhreyScreenshots.matchScreen.light, label: 'Match Screen' }
-		],
 		name: 'Ohrey',
 		period: '2023-03 - Present',
 		skills: getSkills('flutter', 'dart', 'firebase', 'node'),

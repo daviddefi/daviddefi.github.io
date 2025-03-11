@@ -101,12 +101,6 @@ const Assets = {
 		preview3: asset('projects/grillz-builder-3.png')
 	},
 	Ohrey: asset('projects/ohrey-logo.jpg'),
-	OhreyScreenshots: {
-		mainScreen: asset('projects/ohrey-1.jpg'),
-		profileView: asset('projects/ohrey-2.jpg'),
-		chatInterface: asset('projects/ohrey-3.jpg'),
-		matchScreen: asset('projects/ohrey-4.jpg')
-	},
 	OpenBanking: asset('projects/open-banking-platform-logo.png'),
 	OpenBankingScreenshots: {
 		mainScreen: asset('projects/open-banking-platform-1.jpeg'),
