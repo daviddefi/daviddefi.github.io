@@ -70,16 +70,16 @@ const Assets = {
 	Unocss: asset('unocss.svg'),
 	Ruvy: asset('ruvy.svg'),
 	Postcss: asset('postcss.svg'),
-	Swift: asset('swift.png'),
+	Swift: asset('swift.svg'),
 	Ionic: asset('ionic.png'),
 	ReactNative: asset('react.svg'),
-	Oracle: asset('oracle.png'),
+	Oracle: asset('oracle.svg'),
 	MySQL: asset('mysql.png'),
 	ActiveMQ: asset('activemq.png'),
-	Prometheus: asset('prometheus.png'),
-	Grafana: asset('grafana.png'),
+	Prometheus: asset('prometheus.svg'),
+	Grafana: asset('grafana.svg'),
 	Git: asset('git.png'),
-	Jenkins: asset('jenkins.png'),
+	Jenkins: asset('jenkins.svg'),
 	Maven: asset('maven.png')
 } as const;
 
