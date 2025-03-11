@@ -6,15 +6,15 @@ const items: Array<Project> = [
 	{
 		slug: 'fowi-dating',
 		color: '#ff6b6b',
-		description: 'A dating and friendship app with features like location services, swiping, matching, chat functionality, and blog writing capability. Similar to Tinder.',
+		description: 'A dating and friendship app with features like location services, swiping, matching, chat functionality, and blog writing capability.',
 		shortDescription: 'Modern dating and friendship app with location-based matching and chat features.',
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.FowiDating,
 		screenshots: [
-			{ src: '/images/projects/fowi-dating/fowi-dating-1.jpg', label: 'FOWI DATING Main Screen' },
-			{ src: '/images/projects/fowi-dating/fowi-dating-2.jpg', label: 'Profile View' },
-			{ src: '/images/projects/fowi-dating/fowi-dating-3.jpg', label: 'Chat Interface' },
-			{ src: '/images/projects/fowi-dating/fowi-dating-4.jpg', label: 'Match Screen' }
+			{ src: './images/projects/fowi-dating/fowi-dating-1.jpg', label: 'FOWI DATING Main Screen' },
+			{ src: './images/projects/fowi-dating/fowi-dating-2.jpg', label: 'Profile View' },
+			{ src: './images/projects/fowi-dating/fowi-dating-3.jpg', label: 'Chat Interface' },
+			{ src: './images/projects/fowi-dating/fowi-dating-4.jpg', label: 'Match Screen' }
 		],
 		name: 'FOWI DATING',
 		period: '2023-01 - Present',
