@@ -57,30 +57,17 @@ export interface Skill<S extends string = string> extends Omit<Item<S>, 'shortDe
 	category?: SkillCategory;
 }
 
-export interface Project<S extends string = string> extends Item<S> {
-	links: Array<Link>;
-	color: Color;
-	period: {
-		from: Date;
-		to?: Date;
-	};
-	type: string;
-	skills: Array<Skill<S>>;
-}
-
-export interface Experience<S extends string = string> extends Project<S> {
+export interface Experience<S extends string = string> extends Item<S> {
 	company: string;
-	location: string;
-	contract: ContractType;
+	title: string;
+	period: string;
+	description: string;
 }
 
-export interface Education<S extends string = string> extends Item<S> {
-	organization: string;
-	location: string;
-	period: {
-		from: Date;
-		to?: Date;
-	};
-	subjects: Array<string>;
-	degree: string;
+export interface Project<S extends string = string> extends Item<S> {
+	name: string;
+	description: string;
+	period: string;
+	stack: Array<Skill>;
+	links?: Array<Link>;
 }
