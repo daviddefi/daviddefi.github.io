@@ -4,6 +4,54 @@ import type { Project, Screenshot } from './types';
 
 const items: Array<Project> = [
 	{
+		slug: 'crm-system',
+		color: '#6c5ce7',
+		description: 'A customer relationship management (CRM) platform designed to streamline sales processes, manage customer interactions, and optimize business workflows. Features include lead tracking, automated follow-ups, deal pipelines, and customer support ticketing. Developed a user-friendly dashboard with real-time analytics and reporting tools. Integrated email and SMS notifications for enhanced customer engagement. The system syncs with Shopify to pull customer data, track orders, and manage e-commerce sales.',
+		shortDescription: 'Comprehensive CRM platform with Shopify integration and real-time analytics.',
+		links: [{ to: '#', label: 'Private Repository' }],
+		logo: Assets.Unknown,
+		name: 'CRM System',
+		period: '2024-01 - Present',
+		skills: getSkills('angular', 'spring-boot', 'mongodb', 'redis'),
+		type: 'Enterprise Platform'
+	},
+	{
+		slug: 'grillz-builder',
+		color: '#ffd93d',
+		description: 'An interactive web application for designing custom grillz, allowing users to personalize teeth shapes, materials, engravings, and diamond placements. Integrated 3D visualization to preview designs in real time, with dynamic pricing based on customizations. Users can seamlessly order their custom grillz via Shopify, with automatic order synchronization.',
+		shortDescription: 'Interactive 3D grillz customization platform with Shopify integration.',
+		links: [{ to: '#', label: 'Private Repository' }],
+		logo: Assets.Unknown,
+		name: 'Grillz Builder',
+		period: '2024-02 - Present',
+		skills: getSkills('react', 'node', 'firebase', 'express'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'open-banking',
+		color: '#45b7d1',
+		description: 'A comprehensive digital banking platform that enables users to register for banking services online using eKYC (electronic Know Your Customer) technology. The system supports a seamless and secure banking experience with features such as instant money transfers via QR codes, scheduled transactions, online savings account management, and real-time financial tracking. Transactions are secured with modern authentication methods that comply with national banking security standards. Additional utilities include referring friends, gifting, appointment scheduling, and stock information tracking.',
+		shortDescription: 'Digital banking platform with eKYC and advanced security features.',
+		links: [{ to: '#', label: 'Private Repository' }],
+		logo: Assets.Unknown,
+		name: 'Open Banking Platform',
+		period: '2024-03 - Present',
+		skills: getSkills('flutter', 'spring-boot', 'mysql', 'firebase'),
+		type: 'Enterprise Platform'
+	},
+	{
+		slug: 'peopletrust',
+		color: '#88d8b0',
+		description: 'An e-commerce marketplace designed for the buying and selling of clean agricultural products, offering a transparent and reliable platform for farmers and consumers. The application includes advanced features such as secure transactions, real-time product updates, and user-friendly navigation. PeopleTrust connects buyers and sellers to promote sustainable agriculture and ethical sourcing.',
+		shortDescription: 'Agricultural e-commerce platform connecting farmers and consumers.',
+		links: [{ to: '#', label: 'Private Repository' }],
+		logo: Assets.Unknown,
+		name: 'PeopleTrust',
+		period: '2024-04 - Present',
+		skills: getSkills('flutter', 'node', 'mongodb', 'firebase'),
+		type: 'E-commerce Platform'
+	},
+	{
 		slug: 'fowi-dating',
 		color: '#ff6b6b',
 		description: 'A dating and friendship app with features like location services, swiping, matching, chat functionality, and blog writing capability.',
