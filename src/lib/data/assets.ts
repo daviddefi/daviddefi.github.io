@@ -91,9 +91,7 @@ const Assets = {
 	},
 	KBHero: asset('projects/KB-HERO-logo.png'),
 	KBHeroScreenshots: {
-		mainScreen: asset('projects/KB-HERO-1.jpg'),
-		profileView: asset('projects/KB-HERO-2.jpg'),
-		chatInterface: asset('projects/KB-HERO-3.jpg')
+		mainScreen: asset('projects/KB-HERO-1.jpg')
 	},
 	Ohrey: asset('projects/ohrey-logo.jpg'),
 	OhreyScreenshots: {

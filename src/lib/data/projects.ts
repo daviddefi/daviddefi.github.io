@@ -24,8 +24,8 @@ const items: Array<Project> = [
 	{
 		slug: 'grillz-builder',
 		color: '#ffd93d',
-		description: 'An interactive web application for designing custom grillz, allowing users to personalize teeth shapes, materials, engravings, and diamond placements. Integrated 3D visualization to preview designs in real time, with dynamic pricing based on customizations. Users can seamlessly order their custom grillz via Shopify, with automatic order synchronization.',
-		shortDescription: 'Interactive 3D grillz customization platform with Shopify integration.',
+		description: 'A customization platform similar to Nike By You, but for custom grillz design. This interactive web application allows users to personalize their grillz with features like teeth shape selection, material choices (gold, silver, platinum), diamond placements, and custom engravings. The platform provides real-time 3D visualization of designs, dynamic pricing based on customizations, and seamless integration with Shopify for order processing. Users can experiment with different combinations, save their designs, and share them on social media.',
+		shortDescription: 'Interactive 3D grillz customization platform inspired by Nike By You.',
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.Unknown,
 		name: 'Grillz Builder',
@@ -64,9 +64,6 @@ const items: Array<Project> = [
 			{ to: 'https://apps.apple.com/us/app/peopletrust-n%C3%B4ng-s%E1%BA%A3n-s%E1%BA%A1ch/id1485974563', label: '🍎 iOS' }
 		],
 		logo: Assets.PeopleTrust,
-		screenshots: [
-			{ src: Assets.PeopleTrustScreenshots.mainScreen.light, label: 'Main Screen' }
-		],
 		name: 'PeopleTrust',
 		period: '2024-04 - Present',
 		skills: getSkills('flutter', 'node', 'mongodb', 'firebase'),
@@ -123,9 +120,7 @@ const items: Array<Project> = [
 		],
 		logo: Assets.KBHero,
 		screenshots: [
-			{ src: Assets.KBHeroScreenshots.mainScreen.light, label: 'Main Screen' },
-			{ src: Assets.KBHeroScreenshots.profileView.light, label: 'Profile View' },
-			{ src: Assets.KBHeroScreenshots.chatInterface.light, label: 'Chat Interface' }
+			{ src: Assets.KBHeroScreenshots.mainScreen.light, label: 'Main Screen' }
 		],
 		name: 'KB-HERO',
 		period: '2023-06 - Present',
