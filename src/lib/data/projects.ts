@@ -74,10 +74,10 @@ const items: Array<Project> = [
 		],
 		logo: Assets.FowiDating,
 		screenshots: [
-			{ src: '/images/projects/fowi-dating/fowi-dating-1.jpg', label: 'Main Screen' },
-			{ src: '/images/projects/fowi-dating/fowi-dating-2.jpg', label: 'Profile View' },
-			{ src: '/images/projects/fowi-dating/fowi-dating-3.jpg', label: 'Chat Interface' },
-			{ src: '/images/projects/fowi-dating/fowi-dating-4.jpg', label: 'Match Screen' }
+			{ src: Assets.FowiDatingScreenshots.mainScreen.light, label: 'Main Screen' },
+			{ src: Assets.FowiDatingScreenshots.profileView.light, label: 'Profile View' },
+			{ src: Assets.FowiDatingScreenshots.chatInterface.light, label: 'Chat Interface' },
+			{ src: Assets.FowiDatingScreenshots.matchScreen.light, label: 'Match Screen' }
 		],
 		name: 'FOWI DATING',
 		period: '2023-01 - Present',
