@@ -29,9 +29,10 @@ const items: Array<Project> = [
 		links: [{ to: '#', label: 'Private Repository' }],
 		logo: Assets.GrillzBuilder,
 		screenshots: [
-			{ src: Assets.GrillzBuilderScreenshots.customization.light, label: 'Main Screen' },
-			{ src: Assets.GrillzBuilderScreenshots.preview.light, label: '3D Preview' },
-			{ src: Assets.GrillzBuilderScreenshots.checkout.light, label: '3D Preview' }
+			{ src: Assets.GrillzBuilderScreenshots.mainscreen.light, label: 'Main Screen' },
+			{ src: Assets.GrillzBuilderScreenshots.preview1.light, label: '3D Preview' },
+			{ src: Assets.GrillzBuilderScreenshots.preview2.light, label: '3D Preview' },
+			{ src: Assets.GrillzBuilderScreenshots.preview3.light, label: '3D Preview' }
 		],
 		name: 'Grillz Builder',
 		period: '2024-02 - Present',

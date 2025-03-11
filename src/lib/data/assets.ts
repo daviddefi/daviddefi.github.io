@@ -95,9 +95,10 @@ const Assets = {
 	},
 	GrillzBuilder: asset('projects/grillz-builder-logo.jpg'),
 	GrillzBuilderScreenshots: {
-		customization: asset('projects/grillz-builder-1.png'),
-		preview: asset('projects/grillz-builder-2.png'),
-		checkout: asset('projects/grillz-builder-3.png')
+		mainscreen: asset('projects/grillz-builder-4.png'),
+		preview1: asset('projects/grillz-builder-1.png'),
+		preview2: asset('projects/grillz-builder-2.png'),
+		preview3: asset('projects/grillz-builder-3.png')
 	},
 	Ohrey: asset('projects/ohrey-logo.jpg'),
 	OhreyScreenshots: {
