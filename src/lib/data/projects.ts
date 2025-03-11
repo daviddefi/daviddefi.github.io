@@ -2,6 +2,12 @@ import Assets from './assets';
 import { getSkills } from './skills';
 import type { Project, Screenshot } from './types';
 
+// Store icons as inline SVG
+const storeIcons = {
+	android: '<svg viewBox="0 0 24 24" class="w-5 h-5"><path fill="currentColor" d="M17.523 15.341a1.31 1.31 0 01-.924-.383.95.95 0 01-.393-.779.95.95 0 01.393-.779 1.31 1.31 0 01.924-.383c.347 0 .654.123.924.383.27.256.393.498.393.779s-.123.523-.393.779a1.31 1.31 0 01-.924.383zm-11.046 0a1.31 1.31 0 01-.924-.383.95.95 0 01-.393-.779.95.95 0 01.393-.779 1.31 1.31 0 01.924-.383c.347 0 .654.123.924.383.27.256.393.498.393.779s-.123.523-.393.779a1.31 1.31 0 01-.924.383zm11.415-6.458l1.864-2.589a.422.422 0 00.086-.437.515.515 0 00-.086-.164.438.438 0 00-.616-.091l-2.006 2.785c-1.528-.669-3.203-1.004-5.024-1.004s-3.496.335-5.024 1.004L5.134 5.602a.438.438 0 00-.616.091.515.515 0 00-.086.164.422.422 0 00.086.437l1.864 2.589C3.947 10.081 2.5 12.322 2.5 14.843v.957c0 .876.327 1.623.981 2.241.654.619 1.444.928 2.368.928h12.302c.924 0 1.714-.31 2.368-.928.654-.618.981-1.365.981-2.241v-.957c0-2.521-1.447-4.762-3.808-6.002z"/></svg>',
+	ios: '<svg viewBox="0 0 24 24" class="w-5 h-5"><path fill="currentColor" d="M14.94 5.19A4.38 4.38 0 0016 2a4.38 4.38 0 00-3 1.52 4.09 4.09 0 00-1 3.07 3.59 3.59 0 002.94-1.4zm3.49 7.08c.17 1.87 1.6 6.73 5.07 6.73a2.47 2.47 0 01-2 1.25c-.84 0-1.5-.5-2.5-.5s-1.67.5-2.5.5a2.47 2.47 0 01-2-1.25 11.45 11.45 0 01-2-6.73c0-4.07 2.87-6 5.37-6a3.11 3.11 0 012.63 1.25c.83.87 1.17 1.87 1.17 3.25a3.25 3.25 0 01-1.17 2.25z"/></svg>'
+};
+
 const items: Array<Project> = [
 	{
 		slug: 'crm-system',
@@ -33,8 +39,8 @@ const items: Array<Project> = [
 		description: 'A comprehensive digital banking platform that enables users to register for banking services online using eKYC (electronic Know Your Customer) technology. The system supports a seamless and secure banking experience with features such as instant money transfers via QR codes, scheduled transactions, online savings account management, and real-time financial tracking. Transactions are secured with modern authentication methods that comply with national banking security standards. Additional utilities include referring friends, gifting, appointment scheduling, and stock information tracking.',
 		shortDescription: 'Digital banking platform with eKYC and advanced security features.',
 		links: [
-			{ to: 'https://play.google.com/store/apps/details?id=ops.namabank.com.vn', label: '📱 Android' },
-			{ to: 'https://apps.apple.com/us/app/nam-a-bank-open-banking/id1456997296?ls=1', label: '🍎 iOS' }
+			{ to: 'https://play.google.com/store/apps/details?id=ops.namabank.com.vn', label: storeIcons.android },
+			{ to: 'https://apps.apple.com/us/app/nam-a-bank-open-banking/id1456997296?ls=1', label: storeIcons.ios }
 		],
 		logo: Assets.Unknown,
 		name: 'Open Banking Platform',
@@ -48,8 +54,8 @@ const items: Array<Project> = [
 		description: 'An e-commerce marketplace designed for the buying and selling of clean agricultural products, offering a transparent and reliable platform for farmers and consumers. The application includes advanced features such as secure transactions, real-time product updates, and user-friendly navigation. PeopleTrust connects buyers and sellers to promote sustainable agriculture and ethical sourcing.',
 		shortDescription: 'Agricultural e-commerce platform connecting farmers and consumers.',
 		links: [
-			{ to: 'https://play.google.com/store/apps/details?id=com.trustsolutions.peopletrust', label: '📱 Android' },
-			{ to: 'https://apps.apple.com/us/app/peopletrust-n%C3%B4ng-s%E1%BA%A3n-s%E1%BA%A1ch/id1485974563', label: '🍎 iOS' }
+			{ to: 'https://play.google.com/store/apps/details?id=com.trustsolutions.peopletrust', label: storeIcons.android },
+			{ to: 'https://apps.apple.com/us/app/peopletrust-n%C3%B4ng-s%E1%BA%A3n-s%E1%BA%A1ch/id1485974563', label: storeIcons.ios }
 		],
 		logo: Assets.Unknown,
 		name: 'PeopleTrust',
@@ -63,8 +69,8 @@ const items: Array<Project> = [
 		description: 'A dating and friendship app with features like location services, swiping, matching, chat functionality, and blog writing capability.',
 		shortDescription: 'Modern dating and friendship app with location-based matching and chat features.',
 		links: [
-			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.fowi', label: '📱 Android' },
-			{ to: 'https://apps.apple.com/vn/app/fowi/id1572297184', label: '🍎 iOS' }
+			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.fowi', label: storeIcons.android },
+			{ to: 'https://apps.apple.com/vn/app/fowi/id1572297184', label: storeIcons.ios }
 		],
 		logo: Assets.FowiDating,
 		screenshots: [
@@ -84,7 +90,7 @@ const items: Array<Project> = [
 		description: 'A personal inventory management and online shopping experience application. Focused on buying and selling unused items to reduce waste and build sustainable fashion habits.',
 		shortDescription: 'Sustainable fashion marketplace and inventory management system.',
 		links: [
-			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.ohrey', label: '📱 Android' }
+			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.ohrey', label: storeIcons.android }
 		],
 		logo: Assets.Unknown,
 		name: 'Ohrey',
@@ -98,7 +104,7 @@ const items: Array<Project> = [
 		description: "A children's item exchange platform that creates a community for parents and children to develop self-management skills for their belongings. Features include buying, selling, and trading toys, books, and children's clothing to earn coins within the app.",
 		shortDescription: "Children's item exchange platform with gamification elements.",
 		links: [
-			{ to: 'https://apps.apple.com/vn/app/kb-hero/id1594876669?l=vi', label: '🍎 iOS' }
+			{ to: 'https://apps.apple.com/vn/app/kb-hero/id1594876669?l=vi', label: storeIcons.ios }
 		],
 		logo: Assets.Unknown,
 		name: 'KB-HERO',
