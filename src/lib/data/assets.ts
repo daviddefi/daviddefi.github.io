@@ -88,6 +88,30 @@ const Assets = {
 		profileView: asset('projects/fowi-dating-2.jpg'),
 		chatInterface: asset('projects/fowi-dating-3.jpg'),
 		matchScreen: asset('projects/fowi-dating-4.jpg')
+	},
+	KBHero: asset('projects/KB-HERO-logo.png'),
+	KBHeroScreenshots: {
+		mainScreen: asset('projects/KB-HERO-1.jpg'),
+		profileView: asset('projects/KB-HERO-2.jpg'),
+		chatInterface: asset('projects/KB-HERO-3.jpg')
+	},
+	Ohrey: asset('projects/ohrey-logo.jpg'),
+	OhreyScreenshots: {
+		mainScreen: asset('projects/ohrey-1.jpg'),
+		profileView: asset('projects/ohrey-2.jpg'),
+		chatInterface: asset('projects/ohrey-3.jpg'),
+		matchScreen: asset('projects/ohrey-4.jpg')
+	},
+	OpenBanking: asset('projects/open-banking-platform-logo.png'),
+	OpenBankingScreenshots: {
+		mainScreen: asset('projects/open-banking-platform-1.jpeg'),
+		profileView: asset('projects/open-banking-platform-2.jpeg'),
+		chatInterface: asset('projects/open-banking-platform-3.jpg'),
+		matchScreen: asset('projects/open-banking-platform-4.png')
+	},
+	PeopleTrust: asset('projects/people-trust-logo.jpg'),
+	PeopleTrustScreenshots: {
+		mainScreen: asset('projects/people-trust-1.jpg')
 	}
 } as const;
 

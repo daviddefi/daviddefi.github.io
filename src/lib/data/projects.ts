@@ -42,7 +42,13 @@ const items: Array<Project> = [
 			{ to: 'https://play.google.com/store/apps/details?id=ops.namabank.com.vn', label: '📱 Android' },
 			{ to: 'https://apps.apple.com/us/app/nam-a-bank-open-banking/id1456997296?ls=1', label: '🍎 iOS' }
 		],
-		logo: Assets.Unknown,
+		logo: Assets.OpenBanking,
+		screenshots: [
+			{ src: Assets.OpenBankingScreenshots.mainScreen.light, label: 'Main Screen' },
+			{ src: Assets.OpenBankingScreenshots.profileView.light, label: 'Profile View' },
+			{ src: Assets.OpenBankingScreenshots.chatInterface.light, label: 'Features Screen' },
+			{ src: Assets.OpenBankingScreenshots.matchScreen.light, label: 'Transaction Screen' }
+		],
 		name: 'Open Banking Platform',
 		period: '2024-03 - Present',
 		skills: getSkills('flutter', 'spring-boot', 'mysql', 'firebase'),
@@ -57,7 +63,10 @@ const items: Array<Project> = [
 			{ to: 'https://play.google.com/store/apps/details?id=com.trustsolutions.peopletrust', label: '📱 Android' },
 			{ to: 'https://apps.apple.com/us/app/peopletrust-n%C3%B4ng-s%E1%BA%A3n-s%E1%BA%A1ch/id1485974563', label: '🍎 iOS' }
 		],
-		logo: Assets.Unknown,
+		logo: Assets.PeopleTrust,
+		screenshots: [
+			{ src: Assets.PeopleTrustScreenshots.mainScreen.light, label: 'Main Screen' }
+		],
 		name: 'PeopleTrust',
 		period: '2024-04 - Present',
 		skills: getSkills('flutter', 'node', 'mongodb', 'firebase'),
@@ -92,7 +101,13 @@ const items: Array<Project> = [
 		links: [
 			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.ohrey', label: '📱 Android' }
 		],
-		logo: Assets.Unknown,
+		logo: Assets.Ohrey,
+		screenshots: [
+			{ src: Assets.OhreyScreenshots.mainScreen.light, label: 'Main Screen' },
+			{ src: Assets.OhreyScreenshots.profileView.light, label: 'Profile View' },
+			{ src: Assets.OhreyScreenshots.chatInterface.light, label: 'Chat Interface' },
+			{ src: Assets.OhreyScreenshots.matchScreen.light, label: 'Match Screen' }
+		],
 		name: 'Ohrey',
 		period: '2023-03 - Present',
 		skills: getSkills('flutter', 'dart', 'firebase', 'node'),
@@ -106,7 +121,12 @@ const items: Array<Project> = [
 		links: [
 			{ to: 'https://apps.apple.com/vn/app/kb-hero/id1594876669?l=vi', label: '🍎 iOS' }
 		],
-		logo: Assets.Unknown,
+		logo: Assets.KBHero,
+		screenshots: [
+			{ src: Assets.KBHeroScreenshots.mainScreen.light, label: 'Main Screen' },
+			{ src: Assets.KBHeroScreenshots.profileView.light, label: 'Profile View' },
+			{ src: Assets.KBHeroScreenshots.chatInterface.light, label: 'Chat Interface' }
+		],
 		name: 'KB-HERO',
 		period: '2023-06 - Present',
 		skills: getSkills('react-native', 'typescript', 'node', 'postgresql'),
