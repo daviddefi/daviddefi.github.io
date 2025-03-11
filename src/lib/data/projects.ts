@@ -32,7 +32,10 @@ const items: Array<Project> = [
 		color: '#45b7d1',
 		description: 'A comprehensive digital banking platform that enables users to register for banking services online using eKYC (electronic Know Your Customer) technology. The system supports a seamless and secure banking experience with features such as instant money transfers via QR codes, scheduled transactions, online savings account management, and real-time financial tracking. Transactions are secured with modern authentication methods that comply with national banking security standards. Additional utilities include referring friends, gifting, appointment scheduling, and stock information tracking.',
 		shortDescription: 'Digital banking platform with eKYC and advanced security features.',
-		links: [{ to: '#', label: 'Private Repository' }],
+		links: [
+			{ to: 'https://play.google.com/store/apps/details?id=ops.namabank.com.vn', label: '📱 Android' },
+			{ to: 'https://apps.apple.com/us/app/nam-a-bank-open-banking/id1456997296?ls=1', label: '🍎 iOS' }
+		],
 		logo: Assets.Unknown,
 		name: 'Open Banking Platform',
 		period: '2024-03 - Present',
@@ -44,7 +47,10 @@ const items: Array<Project> = [
 		color: '#88d8b0',
 		description: 'An e-commerce marketplace designed for the buying and selling of clean agricultural products, offering a transparent and reliable platform for farmers and consumers. The application includes advanced features such as secure transactions, real-time product updates, and user-friendly navigation. PeopleTrust connects buyers and sellers to promote sustainable agriculture and ethical sourcing.',
 		shortDescription: 'Agricultural e-commerce platform connecting farmers and consumers.',
-		links: [{ to: '#', label: 'Private Repository' }],
+		links: [
+			{ to: 'https://play.google.com/store/apps/details?id=com.trustsolutions.peopletrust', label: '📱 Android' },
+			{ to: 'https://apps.apple.com/us/app/peopletrust-n%C3%B4ng-s%E1%BA%A3n-s%E1%BA%A1ch/id1485974563', label: '🍎 iOS' }
+		],
 		logo: Assets.Unknown,
 		name: 'PeopleTrust',
 		period: '2024-04 - Present',
@@ -56,7 +62,10 @@ const items: Array<Project> = [
 		color: '#ff6b6b',
 		description: 'A dating and friendship app with features like location services, swiping, matching, chat functionality, and blog writing capability.',
 		shortDescription: 'Modern dating and friendship app with location-based matching and chat features.',
-		links: [{ to: '#', label: 'Private Repository' }],
+		links: [
+			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.fowi', label: '📱 Android' },
+			{ to: 'https://apps.apple.com/vn/app/fowi/id1572297184', label: '🍎 iOS' }
+		],
 		logo: Assets.FowiDating,
 		screenshots: [
 			{ src: '/images/projects/fowi-dating/fowi-dating-1.jpg', label: 'Main Screen' },
@@ -74,7 +83,9 @@ const items: Array<Project> = [
 		color: '#4ecdc4',
 		description: 'A personal inventory management and online shopping experience application. Focused on buying and selling unused items to reduce waste and build sustainable fashion habits.',
 		shortDescription: 'Sustainable fashion marketplace and inventory management system.',
-		links: [{ to: '#', label: 'Private Repository' }],
+		links: [
+			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.ohrey', label: '📱 Android' }
+		],
 		logo: Assets.Unknown,
 		name: 'Ohrey',
 		period: '2023-03 - Present',
@@ -86,7 +97,9 @@ const items: Array<Project> = [
 		color: '#ffd93d',
 		description: "A children's item exchange platform that creates a community for parents and children to develop self-management skills for their belongings. Features include buying, selling, and trading toys, books, and children's clothing to earn coins within the app.",
 		shortDescription: "Children's item exchange platform with gamification elements.",
-		links: [{ to: '#', label: 'Private Repository' }],
+		links: [
+			{ to: 'https://apps.apple.com/vn/app/kb-hero/id1594876669?l=vi', label: '🍎 iOS' }
+		],
 		logo: Assets.Unknown,
 		name: 'KB-HERO',
 		period: '2023-06 - Present',
