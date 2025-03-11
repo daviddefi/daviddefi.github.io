@@ -11,12 +11,10 @@ const hero: {
 } = {
 	title: `${BaseData.fullName},`,
 	description:
-		'lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+		'I am a Full-Stack Developer with expertise in designing, developing, and optimizing software solutions across various platforms. My proficiency spans web and mobile development, database management, AI/ML, cybersecurity, DevOps, and system architecture.',
 	links: [
 		{ label: 'GitHub', href: 'https://github.com', icon: 'i-carbon-logo-github' },
-		{ label: 'LinkedIn', href: 'https://linkedin.com', icon: 'i-carbon-logo-linkedin' },
-		{ label: 'Twitter', href: 'https://twitter.com', icon: 'i-carbon-logo-twitter' },
-		{ label: 'Email', href: 'mailto:riadh.adrani@pm.me', icon: 'i-carbon-at' }
+		{ label: 'Email', href: 'mailto:daviddao.upwork@gmail.com', icon: 'i-carbon-at' }
 	]
 };
 
