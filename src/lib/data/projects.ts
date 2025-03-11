@@ -39,8 +39,8 @@ const items: Array<Project> = [
 		description: 'A comprehensive digital banking platform that enables users to register for banking services online using eKYC (electronic Know Your Customer) technology. The system supports a seamless and secure banking experience with features such as instant money transfers via QR codes, scheduled transactions, online savings account management, and real-time financial tracking. Transactions are secured with modern authentication methods that comply with national banking security standards. Additional utilities include referring friends, gifting, appointment scheduling, and stock information tracking.',
 		shortDescription: 'Digital banking platform with eKYC and advanced security features.',
 		links: [
-			{ to: 'https://play.google.com/store/apps/details?id=ops.namabank.com.vn', label: storeIcons.android },
-			{ to: 'https://apps.apple.com/us/app/nam-a-bank-open-banking/id1456997296?ls=1', label: storeIcons.ios }
+			{ to: 'https://play.google.com/store/apps/details?id=ops.namabank.com.vn', label: '📱 Android' },
+			{ to: 'https://apps.apple.com/us/app/nam-a-bank-open-banking/id1456997296?ls=1', label: '🍎 iOS' }
 		],
 		logo: Assets.Unknown,
 		name: 'Open Banking Platform',
@@ -54,8 +54,8 @@ const items: Array<Project> = [
 		description: 'An e-commerce marketplace designed for the buying and selling of clean agricultural products, offering a transparent and reliable platform for farmers and consumers. The application includes advanced features such as secure transactions, real-time product updates, and user-friendly navigation. PeopleTrust connects buyers and sellers to promote sustainable agriculture and ethical sourcing.',
 		shortDescription: 'Agricultural e-commerce platform connecting farmers and consumers.',
 		links: [
-			{ to: 'https://play.google.com/store/apps/details?id=com.trustsolutions.peopletrust', label: storeIcons.android },
-			{ to: 'https://apps.apple.com/us/app/peopletrust-n%C3%B4ng-s%E1%BA%A3n-s%E1%BA%A1ch/id1485974563', label: storeIcons.ios }
+			{ to: 'https://play.google.com/store/apps/details?id=com.trustsolutions.peopletrust', label: '📱 Android' },
+			{ to: 'https://apps.apple.com/us/app/peopletrust-n%C3%B4ng-s%E1%BA%A3n-s%E1%BA%A1ch/id1485974563', label: '🍎 iOS' }
 		],
 		logo: Assets.Unknown,
 		name: 'PeopleTrust',
@@ -69,8 +69,8 @@ const items: Array<Project> = [
 		description: 'A dating and friendship app with features like location services, swiping, matching, chat functionality, and blog writing capability.',
 		shortDescription: 'Modern dating and friendship app with location-based matching and chat features.',
 		links: [
-			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.fowi', label: storeIcons.android },
-			{ to: 'https://apps.apple.com/vn/app/fowi/id1572297184', label: storeIcons.ios }
+			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.fowi', label: '📱 Android' },
+			{ to: 'https://apps.apple.com/vn/app/fowi/id1572297184', label: '🍎 iOS' }
 		],
 		logo: Assets.FowiDating,
 		screenshots: [
@@ -90,7 +90,7 @@ const items: Array<Project> = [
 		description: 'A personal inventory management and online shopping experience application. Focused on buying and selling unused items to reduce waste and build sustainable fashion habits.',
 		shortDescription: 'Sustainable fashion marketplace and inventory management system.',
 		links: [
-			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.ohrey', label: storeIcons.android }
+			{ to: 'https://play.google.com/store/apps/details?id=com.qconnection.ohrey', label: '📱 Android' }
 		],
 		logo: Assets.Unknown,
 		name: 'Ohrey',
@@ -104,7 +104,7 @@ const items: Array<Project> = [
 		description: "A children's item exchange platform that creates a community for parents and children to develop self-management skills for their belongings. Features include buying, selling, and trading toys, books, and children's clothing to earn coins within the app.",
 		shortDescription: "Children's item exchange platform with gamification elements.",
 		links: [
-			{ to: 'https://apps.apple.com/vn/app/kb-hero/id1594876669?l=vi', label: storeIcons.ios }
+			{ to: 'https://apps.apple.com/vn/app/kb-hero/id1594876669?l=vi', label: '🍎 iOS' }
 		],
 		logo: Assets.Unknown,
 		name: 'KB-HERO',

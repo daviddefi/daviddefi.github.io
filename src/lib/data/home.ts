@@ -13,7 +13,6 @@ const hero: {
 	description:
 		'I am a Full-Stack Developer with expertise in designing, developing, and optimizing software solutions across various platforms. My proficiency spans web and mobile development, database management, AI/ML, cybersecurity, DevOps, and system architecture.',
 	links: [
-		{ label: 'GitHub', href: 'https://github.com', icon: 'i-carbon-logo-github' },
 		{ label: 'Email', href: 'mailto:daviddao.upwork@gmail.com', icon: 'i-carbon-at' }
 	]
 };
