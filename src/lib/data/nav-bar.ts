@@ -8,9 +8,7 @@ const items: Array<{
 	href: string;
 }> = [
 	{ title: 'Skills', icon: 'i-carbon-assembly-cluster', href: '/skills' },
-	{ title: 'Projects', icon: 'i-carbon-cube', href: '/projects' },
-	{ title: 'Experience', icon: 'i-carbon-development', href: '/experience' },
-	{ title: 'Resume', icon: 'i-carbon-document', href: '/resume' }
+	{ title: 'Projects', icon: 'i-carbon-cube', href: '/projects' }
 ];
 
 const NavBarData = { left, items };
