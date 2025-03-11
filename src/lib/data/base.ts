@@ -1,11 +1,13 @@
-const firstName = 'Riadh';
-const lastName = 'Adrani';
-const suffix = 'Slick Portfolio With Svelte 5';
+const firstName = 'David';
+const lastName = 'D.';
+const suffix = 'Portfolio';
+const defaultTheme = 'light' as const;
 
 const BaseData = {
 	firstName,
 	lastName,
 	suffix,
+	defaultTheme,
 	get fullName() {
 		return `${firstName} ${lastName}`;
 	}
