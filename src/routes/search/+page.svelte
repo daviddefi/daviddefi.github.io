@@ -12,12 +12,14 @@
 	import Large from '$lib/components/ui/typography/large.svelte';
 	import Assets from '$lib/data/assets';
 	import { NAMED_COLORS } from '$lib/data/colors';
-	import EducationData from '$lib/data/education';
 	import ExperienceData from '$lib/data/experience';
 	import ProjectsData from '$lib/data/projects';
 	import SkillsData from '$lib/data/skills';
 	import { href } from '$lib/utils';
 	import { mode } from 'mode-watcher';
+	import type { Experience } from '$lib/data/types';
+	import type { Project } from '$lib/data/types';
+	import type { Skill } from '$lib/data/types';
 
 	type Item = {
 		name: string;
@@ -35,27 +37,26 @@
 	let search = $state('');
 
 	const getResult = (q: string): Array<Group> => {
-		const skills = SkillsData.items.filter((it) => it.name.toLowerCase().includes(q.toLowerCase()));
-		const projects = ProjectsData.items.filter((it) =>
-			it.name.toLowerCase().includes(q.toLowerCase())
-		);
 		const experience = ExperienceData.items.filter((it) =>
-			it.name.toLowerCase().includes(q.toLowerCase())
+			it.company.toLowerCase().includes(q.toLowerCase())
 		);
-		const education = EducationData.items.filter((it) =>
-			it.name.toLowerCase().includes(q.toLowerCase())
+		const projects = ProjectsData.items.filter(
+			(it) =>
+				it.name.toLowerCase().includes(q.toLowerCase()) ||
+				it.description.toLowerCase().includes(q.toLowerCase())
 		);
+		const skills = SkillsData.items.filter((it) => it.name.toLowerCase().includes(q.toLowerCase()));
 
 		const groups: Array<Group> = [];
 
-		if (skills.length) {
+		if (experience.length) {
 			groups.push({
-				icon: 'i-carbon-assembly-cluster',
-				name: 'Skills',
-				items: skills.map((it) => ({
-					name: it.name,
+				icon: 'i-carbon-development',
+				name: 'Experience',
+				items: experience.map((it) => ({
+					name: it.company,
 					logo: $mode === 'dark' ? it.logo.dark : it.logo.light,
-					link: `/skills/${it.slug}`,
+					link: `/experience/${it.slug}`,
 					color: it.color
 				}))
 			});
@@ -74,28 +75,15 @@
 			});
 		}
 
-		if (experience.length) {
+		if (skills.length) {
 			groups.push({
-				icon: 'i-carbon-development',
-				name: 'Experience',
-				items: experience.map((it) => ({
+				icon: 'i-carbon-assembly-cluster',
+				name: 'Skills',
+				items: skills.map((it) => ({
 					name: it.name,
 					logo: $mode === 'dark' ? it.logo.dark : it.logo.light,
-					link: `/experience/${it.slug}`,
+					link: `/skills/${it.slug}`,
 					color: it.color
-				}))
-			});
-		}
-
-		if (education.length) {
-			groups.push({
-				icon: 'i-carbon-education',
-				name: 'Education',
-				items: education.map((it) => ({
-					name: it.degree,
-					logo: $mode === 'dark' ? it.logo.dark : it.logo.light,
-					link: `/education/${it.slug}`,
-					color: NAMED_COLORS.gray
 				}))
 			});
 		}
