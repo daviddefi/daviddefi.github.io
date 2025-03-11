@@ -11,7 +11,7 @@ const hero: {
 } = {
 	title: `${BaseData.fullName},`,
 	description:
-		'I am a Full-Stack Developer with expertise in designing, developing, and optimizing software solutions across various platforms. My proficiency spans web and mobile development, database management, AI/ML, cybersecurity, DevOps, and system architecture.',
+		'I am a Senior Engineering Manager leading a full-stack development team. With extensive experience in web, mobile, and enterprise solutions, I guide my team in delivering high-quality software across various platforms. Our expertise spans modern technologies including AI/ML, cloud architecture, and DevOps practices.',
 	links: [
 		{ label: 'Email', href: 'mailto:daviddao.upwork@gmail.com', icon: 'i-carbon-at' }
 	]
