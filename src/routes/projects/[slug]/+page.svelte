@@ -21,12 +21,8 @@
 		($mode == 'dark' ? data?.item?.logo.dark : data.item?.logo.light) ?? Assets.Unknown.light
 	);
 
-	let duration = $derived(
-		`${getMonthAndYear(data.item?.period.from)} - ${getMonthAndYear(data.item?.period.to)} · ${computeExactDuration(
-			data.item?.period.from ?? new Date(),
-			data.item?.period.to
-		)}`
-	);
+	let [from, to] = $derived(data.item?.period?.split(' - ') ?? []);
+	let duration = $derived(to === 'Present' ? `Since ${from}` : `${from} - ${to}`);
 </script>
 
 <BasePage {title}>
